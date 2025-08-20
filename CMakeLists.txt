@@ -12,6 +12,7 @@ option(TELEMETRY_MARCH_NATIVE "Pass -march=native for CRC/intrinsics tuning (dev
 
 add_library(telemetry_core STATIC
   src/buffer_pool.cpp
+  src/wal.cpp
   src/validate.cpp
 )
 target_include_directories(telemetry_core PUBLIC
