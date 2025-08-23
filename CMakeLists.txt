@@ -14,6 +14,8 @@ add_library(telemetry_core STATIC
   src/buffer_pool.cpp
   src/wal.cpp
   src/validate.cpp
+  src/receiver.cpp
+  src/writer.cpp
 )
 target_include_directories(telemetry_core PUBLIC
   ${CMAKE_CURRENT_SOURCE_DIR}/include
